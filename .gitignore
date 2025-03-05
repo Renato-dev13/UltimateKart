@@ -1,3 +1,20 @@
-node_modules
-# Keep environment variables out of version control
+# Node.js dependencies – Exclude installed packages to prevent unnecessary versioning
+node_modules/
+
+# Keep sensitive information out of version control
 .env
+
+# Logs – Ignore log files to keep the repository clean
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output – Prevent compiled files from being committed
+dist/
+build/
+
+# System and IDE-specific files – Avoid committing temporary or system-generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
